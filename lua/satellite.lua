@@ -145,13 +145,6 @@ local function apply_keymaps()
 			end, { unique = true, expr = true })
 		end
 	end
-
-	---@diagnostic disable-next-line: missing-parameter
-	if vim.fn.maparg("<leftmouse>") == "" then
-		vim.keymap.set({ "n", "v", "o", "i" }, "<leftmouse>", function()
-			require("satellite.mouse").handle_leftmouse()
-		end)
-	end
 end
 
 function M.setup(cfg)

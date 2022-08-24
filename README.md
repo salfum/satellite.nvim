@@ -1,4 +1,5 @@
-# 🚧 WIP 🚧
+# Fork with mouse support removed
+# for neovim>=0.7.0
 
 # satellite.nvim
 
@@ -15,7 +16,6 @@
   * Git hunks (via [gitsigns.nvim])
   * Marks
 * Handling for folds
-* Mouse support
 
 ## Requirements
 

@@ -6,12 +6,6 @@ Homepage: <https://github.com/lewis6991/satellite.nvim>
 License:  MIT license
 
 ==============================================================================
-REQUIREMENTS                                          *satellite-requirements*
-
-* Scrollbar mouse dragging requires mouse support (see |'mouse'|) and
-  `nvim>=0.7`.
-
-==============================================================================
 USAGE                                                        *satellite-usage*
 
 For basic setup with all batteries included:
@@ -101,12 +95,6 @@ The highlight groups can be customized. Example:
 
     " Specify custom highlighting for ScrollView
     highlight ScrollView ctermbg=159 guibg=LightCyan
-
-Mouse Support (experimental) ~
-                                                    *satellite-mouse-support*
-
-A |<LeftMouse>| mapping is automatically created for interactive mouse
-support.
 
 ==============================================================================
 ISSUES                                                      *satellite-issues*
