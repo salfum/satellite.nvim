@@ -36,44 +36,44 @@ local M = {}
 
 ---@type Config
 local user_config = {
-  handlers = {
-    search = {
-      enable = true,
-      overlap = true,
-      priority = 10,
-    },
-    diagnostic = {
-      enable = true,
-      overlap = true,
-      priority = 50,
-    },
-    gitsigns = {
-      enable = true,
-      overlap = false,
-      priority = 20,
-    },
-    marks = {
-      enable = true,
-      overlap = true,
-      priority = 60,
-      show_builtins = false,
-    },
-  },
-  current_only = false,
-  winblend = 50,
-  zindex = 40,
-  excluded_filetypes = {},
+	handlers = {
+		search = {
+			enable = true,
+			overlap = true,
+			priority = 10,
+		},
+		diagnostic = {
+			enable = true,
+			overlap = true,
+			priority = 50,
+		},
+		gitsigns = {
+			enable = true,
+			overlap = false,
+			priority = 20,
+		},
+		marks = {
+			enable = true,
+			overlap = true,
+			priority = 60,
+			show_builtins = false,
+		},
+	},
+	current_only = false,
+	winblend = 50,
+	zindex = 40,
+	excluded_filetypes = {},
 }
 
 M.user_config = setmetatable({}, {
-  __index = function(_, k)
-    return user_config[k]
-  end
+	__index = function(_, k)
+		return user_config[k]
+	end,
 })
 
 ---@param config Config
 function M.apply(config)
-  user_config = vim.tbl_extend('force', user_config, config or {})
+	user_config = vim.tbl_extend("force", user_config, config or {})
 end
 
 return M
